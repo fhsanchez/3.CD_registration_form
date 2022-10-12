@@ -11,65 +11,67 @@
 <body>
     <h1>Registration Form</h1>
 
-    <div>
-        <input type="text" id="first_name" placeholder="First Name">
-        <label for="first_name">(*)</label>
-    </div>
-    <div>
-        <input type="text" id="last_name" placeholder="Last Name">
-        <label for="last_name">(*)</label>
-    </div>
-    <div>
-        <input type="email" id="email" placeholder="Email Adress">
-        <label for="email">(*)</label>
-    </div>
-    <div>
-        <input type="password" id="password" placeholder="My password">
-        <label for="password">(*)</label>
-    </div>
-    <div>
-        <input type="password" id="conf_password" placeholder="Confirm password">
-        <label for="conf_password">(*)</label>
-    </div>
-    <div>
-        <label for="birthday">My birthday is</label>
-        <input type="date" id="birthday">
+    <form method="POST" action="#">
+        <div>
+            <input type="text" id="first_name" placeholder="First Name">
+            <label for="first_name">(*)</label>
+        </div>
+        <div>
+            <input type="text" id="last_name" placeholder="Last Name">
+            <label for="last_name">(*)</label>
+        </div>
+        <div>
+            <input type="email" id="email" placeholder="Email Adress">
+            <label for="email">(*)</label>
+        </div>
+        <div>
+            <input type="password" id="password" placeholder="My password">
+            <label for="password">(*)</label>
+        </div>
+        <div>
+            <input type="password" id="conf_password" placeholder="Confirm password">
+            <label for="conf_password">(*)</label>
+        </div>
+        <div>
+            <label for="birthday">My birthday is</label>
+            <input type="date" id="birthday">
 
-    </div>
-    <div>
-        <p>Gender Identify</p>
-        <input id="rdnG1" type="radio" name="gender">
-        <label for="rdnG1">Male</label>
+        </div>
+        <div>
+            <p>Gender Identify</p>
+            <input id="rdnG1" type="radio" name="gender">
+            <label for="rdnG1">Male</label>
 
-        <input id="rdnG2" type="radio" name="gender">
-        <label for="rdnG2">Female</label>
+            <input id="rdnG2" type="radio" name="gender">
+            <label for="rdnG2">Female</label>
 
-        <input id="rdnG3" type="radio" name="gender">
-        <label for="rdnG3">I prefer no to answer</label>
-    </div>
-    <div>
-        <p>A short description about my self</p>
-        <textarea name="comment" cols="40" rows="5"></textarea>
-    </div>
-    <div>
-        <label for="favorite_language">Favorite language is</label>
-        <select id="favorite_language">
-            <option>Javascript</option>
-            <option>Type script</option>
-            <option>Node.js</option>
-        </select>
-    </div>
-    <br>
-    <div>
-        <input type="checkbox" id="receive" checked>
-        <label for="receive">Yes, I would like to receive periodic email updates</label>
-    </div>
+            <input id="rdnG3" type="radio" name="gender">
+            <label for="rdnG3">I prefer no to answer</label>
+        </div>
+        <div>
+            <p>A short description about my self</p>
+            <textarea name="comment" cols="40" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="favorite_language">Favorite language is</label>
+            <select id="favorite_language">
+                <option>Javascript</option>
+                <option>Type script</option>
+                <option>Node.js</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="receive" checked>
+            <label for="receive">Yes, I would like to receive periodic email updates</label>
+        </div>
 
-    <br>
-    <div>
-        <input type="submit" id="bnt_create_account" value="Create account">
+        <br>
+        <div>
+            <input type="submit" id="bnt_create_account" value="Create account">
 
-    </div>
+        </div>
+    </form>
     <p>
         (*) Indicates a required field
     </p>
